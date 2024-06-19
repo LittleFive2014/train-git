@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello world</title>
+</head>
+<body>
+    <p th:text="|Hello, ${name}!|"></p>
+    <p th:text="|message, ${message.msgNo}!|"></p>
+    <p th:text="|message, ${message.msg}!|"></p>
+    <a href="/subpage/sub1">next page</a>
+    <form method="post" th:action="@{/user}" th:object="${user}">
+        <input type="text" th:field="*{name}">
+        <span
+                th:if = "${#fields.hasErrors('name')}"
+                th:errors = "*{name}">name Error</span>
+        <input type="text" th:field="*{age}">
+        <input type="text" th:field="*{sex}">
+        <input type="submit" value="submit user">
+    </form>
+
+</body>
+</html>

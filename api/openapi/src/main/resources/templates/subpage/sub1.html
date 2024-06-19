@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello world</title>
+</head>
+<body>
+    <p th:text="|sub1, ${name}!|"></p>
+
+    <p th:text="|Hello, ${name}!|"></p>
+    <p th:text="|message, ${message.msgNo}!|"></p>
+    <p th:text="|message, ${message.msg}!|"></p>
+    <a href="/subpage/sub1">next page</a>
+    <div th:each="men:${men}">
+        <span th:text="${men.name}"></span>
+    </div>
+</body>
+</html>
