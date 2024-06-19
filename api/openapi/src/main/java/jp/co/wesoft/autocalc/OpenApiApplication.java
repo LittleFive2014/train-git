@@ -17,6 +17,7 @@ public class OpenApiApplication {
 		String param7 =　"abc";
 		String param8 =　"abc";
 		String param9 =　"abc";
+		String param10 =　"abc";
         SpringApplication.run(OpenApiApplication.class, args);
     }
 
