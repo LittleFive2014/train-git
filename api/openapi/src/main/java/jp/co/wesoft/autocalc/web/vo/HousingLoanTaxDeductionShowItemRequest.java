@@ -4,6 +4,7 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 import jp.co.wesoft.autocalc.web.vo.HousingLoanTaxDeductionCalcRequest.HousingLoanTaxDeduction;
+
 @Getter
 @Setter
 @ToString
