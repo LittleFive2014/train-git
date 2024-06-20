@@ -8,7 +8,6 @@ public class RoundingUtils {
     BigDecimal bd = new BigDecimal(amount);
     bd = bd.setScale(0, BigDecimal.ROUND_HALF_UP);
 
-
     return bd.intValue() / 100 * 100;
   }
 }
