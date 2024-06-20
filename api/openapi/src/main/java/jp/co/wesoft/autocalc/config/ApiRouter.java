@@ -14,7 +14,6 @@ public class ApiRouter {
     @Bean
     public RouterFunction<ServerResponse> routes(HousingLoanTaxDeductionCalcHandler handler) {
 
-
         return route(POST("/housingLoanTaxDeductionCalc"), handler::housingLoanTaxDeductionCalc);
     }
 }
